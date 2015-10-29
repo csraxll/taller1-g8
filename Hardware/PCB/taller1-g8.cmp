@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = jue 29 oct 2015 06:35:36 ART
+
+BeginCmp
+TimeStamp = /5631E1CA/5631E228;
+Reference = P1;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_4x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5631E1CA/5631E22E;
+Reference = P2;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_4x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5631E1CA/5631E202;
+Reference = REGC1;
+ValeurCmp = 74HC595;
+IdModule  = DIP-16__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /5631E1CA/5631E1FC;
+Reference = REGF1;
+ValeurCmp = 74HC595;
+IdModule  = DIP-16__300;
+EndCmp
+
+EndListe
