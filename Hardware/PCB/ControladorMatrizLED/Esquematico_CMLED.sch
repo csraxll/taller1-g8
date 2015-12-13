@@ -1,7 +1,8 @@
 EESchema Schematic File Version 2
-LIBS:Misc_Poncho_Grande
 LIBS:Poncho_Esqueleto
+LIBS:Misc_Poncho_Grande
 LIBS:74xx
+LIBS:device
 LIBS:conn
 LIBS:power
 LIBS:ControladorMatrizLED-cache
@@ -9,7 +10,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 3 3
 Title "noname.sch"
 Date "12 nov 2015"
 Rev ""
@@ -41,27 +42,16 @@ F 3 "~" H 3650 4750 60  0000 C CNN
 	1    3650 4750
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1400 2500 0    60   Input ~ 0
-GPIO1
-Text HLabel 1400 2700 0    60   Input ~ 0
-GPIO3
-Text HLabel 1400 3000 0    60   Input ~ 0
+Text HLabel 1400 2500 0    60   BiDi ~ 0
 GPIO5
-Text HLabel 1400 3200 0    60   Input ~ 0
+Text HLabel 1400 2700 0    60   BiDi ~ 0
+GPIO1
+Text HLabel 1400 3000 0    60   BiDi ~ 0
+GPIO3
+Text HLabel 1400 3200 0    60   BiDi ~ 0
 GPIO7
-Text HLabel 1400 3300 0    60   Input ~ 0
+Text HLabel 1400 3300 0    60   BiDi ~ 0
 GPIO8
-$Comp
-L VCC #PWR01
-U 1 1 5631E23A
-P 2800 5950
-F 0 "#PWR01" H 2800 6050 30  0001 C CNN
-F 1 "VCC" H 2800 6050 30  0000 C CNN
-F 2 "" H 2800 5950 60  0000 C CNN
-F 3 "" H 2800 5950 60  0000 C CNN
-	1    2800 5950
-	0    -1   -1   0   
-$EndComp
 $Comp
 L 74HC595 REGC3
 U 1 1 56449097
@@ -74,40 +64,10 @@ F 3 "~" H 8850 4800 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VCC #PWR02
-U 1 1 56449A6A
-P 5650 5950
-F 0 "#PWR02" H 5650 6050 30  0001 C CNN
-F 1 "VCC" H 5650 6050 30  0000 C CNN
-F 2 "" H 5650 5950 60  0000 C CNN
-F 3 "" H 5650 5950 60  0000 C CNN
-	1    5650 5950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L VCC #PWR03
-U 1 1 56449A72
-P 8000 6000
-F 0 "#PWR03" H 8000 6100 30  0001 C CNN
-F 1 "VCC" H 8000 6100 30  0000 C CNN
-F 2 "" H 8000 6000 60  0000 C CNN
-F 3 "" H 8000 6000 60  0000 C CNN
-	1    8000 6000
-	0    -1   -1   0   
-$EndComp
-Text HLabel 7550 3200 2    60   Output ~ 0
-JF_OUT
-Text HLabel 7400 4050 2    60   Output ~ 0
-JC2_OUT
-Text HLabel 7700 3750 0    60   Input ~ 0
-JC3_OUT
-Text HLabel 7800 5550 0    60   Input ~ 0
-JCLK_C3
-$Comp
-L GND #PWR04
+L GND #PWR015
 U 1 1 5653C022
 P 4100 5450
-F 0 "#PWR04" H 4100 5450 30  0001 C CNN
+F 0 "#PWR015" H 4100 5450 30  0001 C CNN
 F 1 "GND" H 4100 5380 30  0001 C CNN
 F 2 "" H 4100 5450 60  0000 C CNN
 F 3 "" H 4100 5450 60  0000 C CNN
@@ -115,10 +75,10 @@ F 3 "" H 4100 5450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR05
+L GND #PWR016
 U 1 1 5653C14E
 P 7000 5450
-F 0 "#PWR05" H 7000 5450 30  0001 C CNN
+F 0 "#PWR016" H 7000 5450 30  0001 C CNN
 F 1 "GND" H 7000 5380 30  0001 C CNN
 F 2 "" H 7000 5450 60  0000 C CNN
 F 3 "" H 7000 5450 60  0000 C CNN
@@ -126,10 +86,10 @@ F 3 "" H 7000 5450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR06
+L GND #PWR017
 U 1 1 5653C1C6
 P 9300 5500
-F 0 "#PWR06" H 9300 5500 30  0001 C CNN
+F 0 "#PWR017" H 9300 5500 30  0001 C CNN
 F 1 "GND" H 9300 5430 30  0001 C CNN
 F 2 "" H 9300 5500 60  0000 C CNN
 F 3 "" H 9300 5500 60  0000 C CNN
@@ -137,10 +97,10 @@ F 3 "" H 9300 5500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR07
+L GND #PWR018
 U 1 1 5653C21E
 P 3400 1950
-F 0 "#PWR07" H 3400 1950 30  0001 C CNN
+F 0 "#PWR018" H 3400 1950 30  0001 C CNN
 F 1 "GND" H 3400 1880 30  0001 C CNN
 F 2 "" H 3400 1950 60  0000 C CNN
 F 3 "" H 3400 1950 60  0000 C CNN
@@ -148,48 +108,60 @@ F 3 "" H 3400 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR08
-U 1 1 5631E234
-P 2300 850
-F 0 "#PWR08" H 2300 950 30  0001 C CNN
-F 1 "VCC" H 2300 950 30  0000 C CNN
-F 2 "" H 2300 850 60  0000 C CNN
-F 3 "" H 2300 850 60  0000 C CNN
-	1    2300 850 
+L 74HC595 REGC2
+U 1 1 56449088
+P 6500 4750
+F 0 "REGC2" H 6650 5350 70  0000 C CNN
+F 1 "74HC595" H 6500 4150 70  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm" H 6500 4750 60  0000 C CNN
+F 3 "~" H 6500 4750 60  0000 C CNN
+	1    6500 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 C1_OUT1
+U 1 1 566E7EB6
+P 3550 3400
+F 0 "C1_OUT1" H 3550 3850 50  0000 C CNN
+F 1 "CONN_01X08" V 3650 3400 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08" H 3550 3400 60  0001 C CNN
+F 3 "" H 3550 3400 60  0000 C CNN
+	1    3550 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 C2_OUT1
+U 1 1 566E8159
+P 6400 3400
+F 0 "C2_OUT1" H 6400 3850 50  0000 C CNN
+F 1 "CONN_01X08" V 6500 3400 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08" H 6400 3400 60  0001 C CNN
+F 3 "" H 6400 3400 60  0000 C CNN
+	1    6400 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 X_OUT1
+U 1 1 566E81A5
+P 8750 3400
+F 0 "X_OUT1" H 8750 3850 50  0000 C CNN
+F 1 "CONN_01X08" V 8850 3400 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08" H 8750 3400 60  0001 C CNN
+F 3 "" H 8750 3400 60  0000 C CNN
+	1    8750 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 F1_OUT1
+U 1 1 566E82AF
+P 5700 1400
+F 0 "F1_OUT1" H 5700 1850 50  0000 C CNN
+F 1 "CONN_01X08" V 5800 1400 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08" H 5700 1400 60  0001 C CNN
+F 3 "" H 5700 1400 60  0000 C CNN
+	1    5700 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 8400 3600 1    60   Output ~ 0
-C3_QA
-Text GLabel 8500 3600 1    60   Output ~ 0
-C3_QB
-Text GLabel 8600 3600 1    60   Output ~ 0
-C3_QC
-Text GLabel 8700 3600 1    60   Output ~ 0
-C3_QD
-Text GLabel 8800 3600 1    60   Output ~ 0
-C3_QE
-Text GLabel 8900 3600 1    60   Output ~ 0
-C3_QF
-Text GLabel 9000 3600 1    60   Output ~ 0
-C3_QG
-Text GLabel 9100 3600 1    60   Output ~ 0
-C3_QH
-Text GLabel 5500 1050 2    60   Output ~ 0
-F1_QA
-Text GLabel 5500 1150 2    60   Output ~ 0
-F1_QB
-Text GLabel 5500 1250 2    60   Output ~ 0
-F1_QC
-Text GLabel 5500 1350 2    60   Output ~ 0
-F1_QD
-Text GLabel 5500 1450 2    60   Output ~ 0
-F1_QE
-Text GLabel 5500 1550 2    60   Output ~ 0
-F1_QF
-Text GLabel 5500 1650 2    60   Output ~ 0
-F1_QG
-Text GLabel 5500 1750 2    60   Output ~ 0
-F1_QH
 Wire Wire Line
 	3500 5950 2800 5950
 Wire Wire Line
@@ -294,7 +266,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 5450 6050 5450
 Wire Wire Line
-	8000 3750 8000 5500
+	8000 3150 8000 5500
 Wire Wire Line
 	8000 5500 8400 5500
 Wire Wire Line
@@ -353,11 +325,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 2250 3200 2250
 Wire Wire Line
-	6950 4050 7400 4050
-Wire Wire Line
-	7700 3750 8000 3750
-Wire Wire Line
-	7550 3200 5300 3200
+	5300 3200 7900 3200
 Wire Wire Line
 	5300 3200 5300 1950
 Connection ~ 5300 1950
@@ -368,72 +336,273 @@ Wire Wire Line
 Wire Wire Line
 	2600 3200 2600 5450
 Wire Wire Line
-	7800 5550 8600 5550
+	7500 5550 8600 5550
 Wire Wire Line
 	8600 5550 8600 5500
 Wire Wire Line
-	3200 3000 3200 1550
+	3200 1550 3200 3000
 Wire Wire Line
 	3400 1350 2300 1350
-Wire Wire Line
-	2300 1350 2300 850 
 Wire Wire Line
 	3400 1650 3400 1950
 Wire Wire Line
 	3200 1550 3400 1550
-Text GLabel 6050 3600 1    60   Output ~ 0
-C2_QA
-Text GLabel 6150 3600 1    60   Output ~ 0
-C2_QB
-Text GLabel 6250 3600 1    60   Output ~ 0
-C2_QC
-Text GLabel 6350 3600 1    60   Output ~ 0
-C2_QD
-Text GLabel 6450 3600 1    60   Output ~ 0
-C2_QE
-Text GLabel 6550 3600 1    60   Output ~ 0
-C2_QF
-Text GLabel 6650 3600 1    60   Output ~ 0
-C2_QG
-Text GLabel 6750 3600 1    60   Output ~ 0
-C2_QH
+Wire Wire Line
+	2300 1350 2300 850 
 $Comp
-L 74HC595 REGC2
-U 1 1 56449088
-P 6500 4750
-F 0 "REGC2" H 6650 5350 70  0000 C CNN
-F 1 "74HC595" H 6500 4150 70  0000 C CNN
-F 2 "Housings_DIP:DIP-16_W7.62mm" H 6500 4750 60  0000 C CNN
-F 3 "~" H 6500 4750 60  0000 C CNN
-	1    6500 4750
+L CONN_01X03 F_EXP1
+U 1 1 566E8AB1
+P 7350 2050
+F 0 "F_EXP1" H 7350 2250 50  0000 C CNN
+F 1 "CONN_01X03" V 7450 2050 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 7350 2050 60  0001 C CNN
+F 3 "" H 7350 2050 60  0000 C CNN
+	1    7350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 C_EXP1
+U 1 1 566E90EC
+P 10600 4850
+F 0 "C_EXP1" H 10600 5050 50  0000 C CNN
+F 1 "CONN_01X03" V 10700 4850 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 10600 4850 60  0001 C CNN
+F 3 "" H 10600 4850 60  0000 C CNN
+	1    10600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2150 5750 2900
+Wire Wire Line
+	5750 2900 7500 2900
+Connection ~ 5750 2150
+$Comp
+L CONN_01X16 CONN_LCD1
+U 1 1 566FE8E9
+P 10650 1800
+F 0 "CONN_LCD1" H 10650 2650 50  0000 C CNN
+F 1 "CONN_01X16" V 10750 1800 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x16" H 10650 1800 60  0001 C CNN
+F 3 "" H 10650 1800 60  0000 C CNN
+	1    10650 1800
+	1    0    0    -1  
+$EndComp
+Text HLabel 9250 2250 0    60   BiDi ~ 0
+LCD1
+Text HLabel 9250 2350 0    60   BiDi ~ 0
+LCD2
+Text HLabel 9250 2450 0    60   BiDi ~ 0
+LCD3
+Text HLabel 9250 2550 0    60   BiDi ~ 0
+LCD4
+Text HLabel 9350 2100 0    60   BiDi ~ 0
+LCD_EN
+Wire Wire Line
+	10450 2350 9250 2350
+Wire Wire Line
+	9250 2450 10450 2450
+Wire Wire Line
+	10450 2550 9250 2550
+NoConn ~ 10450 1850
+NoConn ~ 10450 1950
+NoConn ~ 10450 2050
+NoConn ~ 10450 2150
+$Comp
+L GND #PWR021
+U 1 1 566FFC0D
+P 9200 1250
+F 0 "#PWR021" H 9200 1250 30  0001 C CNN
+F 1 "GND" H 9200 1180 30  0001 C CNN
+F 2 "" H 9200 1250 60  0000 C CNN
+F 3 "" H 9200 1250 60  0000 C CNN
+	1    9200 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10450 1250 9200 1250
+Wire Wire Line
+	9200 1350 10450 1350
+$Comp
+L R R1
+U 1 1 566FFE11
+P 9900 1050
+F 0 "R1" V 9980 1050 50  0000 C CNN
+F 1 "R" V 9900 1050 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 9830 1050 30  0001 C CNN
+F 3 "" H 9900 1050 30  0000 C CNN
+	1    9900 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 566FFF86
+P 9900 1450
+F 0 "R2" V 9980 1450 50  0000 C CNN
+F 1 "R" V 9900 1450 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 9830 1450 30  0001 C CNN
+F 3 "" H 9900 1450 30  0000 C CNN
+	1    9900 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10450 1750 10350 1750
+Wire Wire Line
+	10350 1750 10350 2100
+Wire Wire Line
+	10350 2100 9350 2100
+$Comp
+L R R3
+U 1 1 56700132
+P 9900 1850
+F 0 "R3" V 9980 1850 50  0000 C CNN
+F 1 "R" V 9900 1850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 9830 1850 30  0001 C CNN
+F 3 "" H 9900 1850 30  0000 C CNN
+	1    9900 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10450 1150 10300 1150
+Wire Wire Line
+	10300 1150 10300 1250
+Connection ~ 10300 1250
+Wire Wire Line
+	10050 1050 10450 1050
+Wire Wire Line
+	9350 1050 9750 1050
+Wire Wire Line
+	10450 1450 10050 1450
+Wire Wire Line
+	9750 1450 9650 1450
+Wire Wire Line
+	9650 1450 9650 1350
+Connection ~ 9650 1350
+Wire Wire Line
+	10450 1650 10400 1650
+Wire Wire Line
+	10400 1650 10400 1250
+Connection ~ 10400 1250
+Wire Wire Line
+	10200 1450 10200 1850
+Wire Wire Line
+	10200 1850 10050 1850
+Connection ~ 10200 1450
+Wire Wire Line
+	9750 1850 9550 1850
+Wire Wire Line
+	9550 1850 9550 1250
+Connection ~ 9550 1250
+Wire Wire Line
+	10450 2250 9250 2250
+Text HLabel 9150 2000 0    60   BiDi ~ 0
+RS
+Wire Wire Line
+	10450 1550 10250 1550
+Wire Wire Line
+	10250 1550 10250 2000
+Wire Wire Line
+	10250 2000 9150 2000
+$Comp
+L CONN_01X03 JP_SD_X1
+U 1 1 566C87E7
+P 8000 2950
+F 0 "JP_SD_X1" H 8000 3150 50  0000 C CNN
+F 1 "CONN_01X03" V 8100 2950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 8000 2950 60  0001 C CNN
+F 3 "" H 8000 2950 60  0000 C CNN
+	1    8000 2950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3200 3600 1    60   Output ~ 0
-C1_QA
-Text GLabel 3300 3600 1    60   Output ~ 0
-C1_QB
-Text GLabel 3400 3600 1    60   Output ~ 0
-C1_QC
-Text GLabel 3500 3600 1    60   Output ~ 0
-C1_QD
-Text GLabel 3600 3600 1    60   Output ~ 0
-C1_QE
-Text GLabel 3700 3600 1    60   Output ~ 0
-C1_QF
-Text GLabel 3800 3600 1    60   Output ~ 0
-C1_QG
-Text GLabel 3900 3600 1    60   Output ~ 0
-C1_QH
-Text GLabel 10400 4750 2    60   Output ~ 0
-C3_SD
-Text GLabel 10400 4850 2    60   Output ~ 0
-C3_CLK
-Text GLabel 10400 4950 2    60   Output ~ 0
-C3_LATCH
-Text GLabel 7150 1950 2    60   Output ~ 0
-F1_SD
-Text GLabel 7150 2050 2    60   Output ~ 0
-F1_CLK
-Text GLabel 7150 2150 2    60   Output ~ 0
-F1_LATCH
+Wire Wire Line
+	7900 3200 7900 3150
+Wire Wire Line
+	6950 4050 6950 3300
+Wire Wire Line
+	6950 3300 8100 3300
+Wire Wire Line
+	8100 3300 8100 3150
+$Comp
+L CONN_01X03 JP_CLK_X1
+U 1 1 566C903E
+P 7800 4150
+F 0 "JP_CLK_X1" H 7800 4350 50  0000 C CNN
+F 1 "CONN_01X03" V 7900 4150 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 7800 4150 60  0001 C CNN
+F 3 "" H 7800 4150 60  0000 C CNN
+	1    7800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2900 7500 4050
+Wire Wire Line
+	7500 4050 7600 4050
+Wire Wire Line
+	7600 4150 7500 4150
+Wire Wire Line
+	7500 4150 7500 5550
+Wire Wire Line
+	7600 4250 7350 4250
+Wire Wire Line
+	7350 4250 7350 5600
+Connection ~ 7350 5600
+Text Notes 11100 2550 1    60   ~ 0
+14--------------1-16-15
+Wire Wire Line
+	9350 1050 9350 1350
+Connection ~ 9350 1350
+$Comp
+L VCC #PWR?
+U 1 1 566D7EF6
+P 2300 850
+F 0 "#PWR?" H 2300 700 50  0001 C CNN
+F 1 "VCC" H 2300 1000 50  0000 C CNN
+F 2 "" H 2300 850 60  0000 C CNN
+F 3 "" H 2300 850 60  0000 C CNN
+	1    2300 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 566D842A
+P 2800 5950
+F 0 "#PWR?" H 2800 5800 50  0001 C CNN
+F 1 "VCC" H 2800 6100 50  0000 C CNN
+F 2 "" H 2800 5950 60  0000 C CNN
+F 3 "" H 2800 5950 60  0000 C CNN
+	1    2800 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 566D864E
+P 5650 5950
+F 0 "#PWR?" H 5650 5800 50  0001 C CNN
+F 1 "VCC" H 5650 6100 50  0000 C CNN
+F 2 "" H 5650 5950 60  0000 C CNN
+F 3 "" H 5650 5950 60  0000 C CNN
+	1    5650 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 566D8892
+P 8000 6000
+F 0 "#PWR?" H 8000 5850 50  0001 C CNN
+F 1 "VCC" H 8000 6150 50  0000 C CNN
+F 2 "" H 8000 6000 60  0000 C CNN
+F 3 "" H 8000 6000 60  0000 C CNN
+	1    8000 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 566D8EA7
+P 9200 1350
+F 0 "#PWR?" H 9200 1200 50  0001 C CNN
+F 1 "VCC" H 9200 1500 50  0000 C CNN
+F 2 "" H 9200 1350 60  0000 C CNN
+F 3 "" H 9200 1350 60  0000 C CNN
+	1    9200 1350
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

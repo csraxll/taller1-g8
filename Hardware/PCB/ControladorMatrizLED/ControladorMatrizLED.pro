@@ -1,4 +1,4 @@
-update=23/11/2015 07:11:10 p.m.
+update=12/12/2015 05:39:00 p.m.
 version=1
 last_client=kicad
 [cvpcb]
@@ -30,8 +30,9 @@ version=1
 version=1
 LibDir=../../kicad/libModelos;../../kicad/libPonchos
 [eeschema/libraries]
-LibName1=Misc_Poncho_Grande
-LibName2=Poncho_Esqueleto
+LibName1=Poncho_Esqueleto
+LibName2=Misc_Poncho_Grande
 LibName3=E:/KiCad/share/kicad/library/74xx
-LibName4=E:/KiCad/share/kicad/library/conn
-LibName5=E:/KiCad/share/kicad/library/power
+LibName4=E:/KiCad/share/kicad/library/device
+LibName5=E:/KiCad/share/kicad/library/conn
+LibName6=E:/KiCad/share/kicad/library/power
