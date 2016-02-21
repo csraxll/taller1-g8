@@ -1,0 +1,15 @@
+CONTENEDOR DE MATRICES LED 7x5 PARA CONTROLADOR DE CARTEL LED
+=============================================================
+
+Placa preparada para mostrar la salida del controlador de matrices LED en formato 7x20.
+
+URL: (URL en la wiki de la CIAA)
+FUNCIÓN: Este placa esta especialmente diseñada para funcionar con el controlador de cartel LED en este mismo repositorio de Github. Contiene todos los elementos de hardware para demostrar el correcto funcionamiento del controlador con una salida en formato 7x20. Los elementos de hardware del controlador de cartel LED se incluyen dentro de otro proyecto kicad en el mismo repositorio Github.
+AUTORES/INSTITUCIONES: UNLP | Facultad de Ingeniería | Ingeniería en Computación
+                       - Jourdón, Julián
+                       - Maicá, Juan Manuel
+                       - Lopez Acuña, Axel
+                       - Scorza, Facundo Ricardo
+
+Dentro del directorio "doc" se encuentran incluidos los archivos listos para imprimir que se utilizaron en la fabricación por medios caseros del poncho. Estos son:
+* Impreso - Dos Caras.pdf

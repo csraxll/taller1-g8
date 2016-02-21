@@ -1,12 +1,16 @@
-TITULO PONCHO
-=============
+CONTROLADOR DE CARTEL LED
+=========================
 
-<<Colocar información mínima y propósito del Poncho. La información completa puede estar en la wiki.>>
+Controlador de matriz de LEDs de 16x16 u 8x24 puntos extendible y configurable.
 
 URL: (URL en la wiki de la CIAA)
-FUNCIÓN: Para qué sirve el Poncho.
-AUTORES/INSTITUCIONES: 
+FUNCIÓN: Este poncho contiene todos los elementos de hardware necesarios para controlar un cartel de matrices de puntos LED con un mínimo de 7x5 (idealmente de 8x8), pero expandible a dimensiones mayores. Este implementación está basada en la utilización de registros de desplzamiento. Los elementos de hardware del cartel se incluyen dentro de otro proyecto kicad en el mismo repositorio Github.
+AUTORES/INSTITUCIONES: UNLP | Facultad de Ingeniería | Ingeniería en Computación
+                       - Jourdón, Julián
+                       - Maicá, Juan Manuel
+                       - Lopez Acuña, Axel
+                       - Scorza, Facundo Ricardo
 
-
-
-<<Detalle y explicación de directorios o archivos adicionales que se incorporen.>>
+Dentro del directorio "doc" se encuentran incluidos los archivos listos para imprimir que se utilizaron en la fabricación por medios caseros del poncho. Estos son:
+* Impreso - Back.pdf 
+* Impreso - Referencia para puentes.pdf

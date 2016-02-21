@@ -3,16 +3,11 @@ Historial de cambios realizados
 
 * Fecha: 22/02/2016
 * Autores: Juan Manuel Maicá, Lopez Acuña Axel
-* Archivos:   - conector_poncho.sch
-              - ControladorMatrizLED.kicad_pcb
-              - ControladorMatrizLED.net
-              - ControladorMatrizLED.pro
-              - ControladorMatrizLED.sch
-              - ControladorMatrizLED-cache.lib
-              - Esquematico_CMLED.sch
-              - fp-lib-table
-              - Misc_Poncho_Grande.lib
-              - Poncho_Esqueleto.lib
+* Archivos:   - MatrizLED.sch
+              - MatrizLED.kicad_pcb
+              - MatrizLED.net
+              - MatrizLED.pro
+              - MatrizLED-cache.lib
 * Descripción: Se parte de los Modelos de Ponchos en: 
                http://www.proyecto-ciaa.com.ar/devwiki/doku.php?id=desarrollo:edu-ciaa:ponchos_modelos
                <<Colocar aquí información de cambios importantes y de gran volumen, releases, contribuciones
